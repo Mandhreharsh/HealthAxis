@@ -1,0 +1,105 @@
+.appointment-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 150px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  .appointment-content {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 300px;
+    height: auto;
+    background: linear-gradient(to bottom right, #D0D2FF, #9BB3FB); /* violet500 to lightBlue500 */
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    /* margin: 0 auto; */
+    padding: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 120px;
+  }
+  
+  .appointment-text {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .heading {
+    line-height: 30px;
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    font-size: 16px;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 650px;
+    text-align: justify;
+  }
+  
+  .appointment-image {
+    /* top: -85px; */
+    margin-top: 80px;
+    right: 0;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .appointment-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .appointment-content {
+      flex-direction: column;
+      padding: 40px 20px;
+      height: auto;
+    }
+  
+    .appointment-image {
+      position: static;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    .appointment-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        max-height: 810px;
+        height: auto;
+      }
+      
+  }
+  
+  @media (max-width: 768px) {
+    .appointment-container {
+      margin-top: 100px;
+    }
+  
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 15px;
+    }
+  
+    .appointment-image {
+      display: none;
+    }
+  }
+  

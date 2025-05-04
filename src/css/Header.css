@@ -1,0 +1,149 @@
+/* Header.css */
+
+.header-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    background-image: url('../images/doctorsbg.png');
+    background-repeat: repeat;
+    background-size: cover;
+    margin-top: -70px;
+    overflow-x: hidden;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-text {
+    flex: 1 1 500px;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .header-text h1 {
+    font-size: 58px;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Caladea', serif;
+    line-height: 70px;
+  }
+  
+  .header-text h1 span {
+    color: #8F9DFF; /* darkBlue */
+  }
+  .header-text p {
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Arvo', serif;
+    font-weight: 500;
+  }
+  
+  .header-buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #8F9DFF;
+    color: white;
+    border: none;
+    box-shadow: 0 3px 17px #98a4ff;
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 0 5px 22px #8694fd;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #8F9DFF;
+    color: #8F9DFF;
+  }
+  
+  .header-image {
+    flex: 1 1 400px;
+    max-width: 650px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-image img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  
+  @media screen and (max-width: 992px) {
+    .header-text h1 {
+      font-size: 32px;
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      width: 160px;
+      height: 45px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header-text {
+      padding: 10px;
+    }
+  
+    .header-buttons {
+      justify-content: center;
+    }
+  
+    .header-text h1 {
+      font-size: 28px;
+    }
+  
+    .header-text p {
+      font-size: 16px;
+    }
+  
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .header-image {
+        margin-top: -150px;
+      }
+  }
+  @media screen and (max-width: 550px) {
+    .header-image {
+        margin-top: -10px;
+      }
+  }
+  

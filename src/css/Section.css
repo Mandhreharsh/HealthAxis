@@ -1,0 +1,121 @@
+.section-container {
+    overflow-x: hidden;
+    margin-top: 30px;
+    /* padding-top: 30px; */
+    background-image: url('../images/doctorsbg.png');
+    background-repeat: repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Arvo', serif;
+    margin: 7px 0;
+    line-height: 10px;
+  }
+  .section-head{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Arvo', serif;
+    margin: 10px 0;
+  }
+  
+  .text{
+      font-size: 34px;
+      font-weight: 500;
+      font-family: 'caladea';
+  }
+
+  .highlight {
+    font-weight: bold;
+    font-family: 'Caladea', serif;
+  }
+  
+  .services-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 15px;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+  }
+  
+  .service-card {
+    height: auto;
+    width: 320px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #c7d2fe);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .service-icon {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .service-title {
+    font-size: 20px;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
+  }
+  
+  .service-description {
+    font-size: 16px;
+    font-family: 'Arvo', serif;
+    text-align: justify;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1024px) {
+    .service-card {
+      width: 300px;
+    }
+    .section-heading {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .services-grid {
+      gap: 30px;
+    }
+    .service-card {
+      width: 90%;
+    }
+    .section-heading {
+      font-size: 22px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .section-heading {
+      font-size: 20px;
+    }
+  
+    .service-title {
+      font-size: 18px;
+    }
+  
+    .service-description {
+      font-size: 14px;
+    }
+  }
+  

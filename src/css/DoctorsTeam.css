@@ -1,0 +1,97 @@
+/* General container */
+.doctors-section {
+    background-image: url("../images/doctorsbg.png"); /* adjust as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: -70px;
+  }
+  
+  /* Title styling */
+  .doctors-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-family: 'Arvo', serif;
+    margin-top: 50px;
+  }
+  
+  .highlight {
+    font-family: 'Caladea', serif;
+    color: #6C63FF;
+  }
+  
+  /* Grid layout */
+  .doctors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  /* Each doctor card */
+  .doctor-card {
+    width: 400px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #D9F6FF, #D0D2FF);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Image container */
+  .doctor-image-wrapper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Info box */
+  .doctor-info {
+    background-color: white;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .doctor-name {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .doctor-title {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .doctor-card {
+      width: 90%;
+    }
+  
+    .doctors-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .doctor-card {
+      width: 100%;
+    }
+  
+    .doctors-title {
+      font-size: 1.8rem;
+    }
+  }
+  

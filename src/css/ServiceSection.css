@@ -1,0 +1,149 @@
+@media (max-width: 400px)  {
+    .ServicesSectionMain{
+        width: 100%;
+    }
+    .ServiceSection{
+        width: 300px;
+    }
+    .ServiceSection-description{
+        width: 250px;
+    }
+}/* Font classes (add your own font-face if needed) */
+.Arvo {
+    font-family: 'Arvo', serif;
+  }
+  
+  .caladea {
+    font-family: 'Caladea', serif;
+  }
+  
+  /* Main wrapper */
+  .ServicesSectionMain {
+    /* padding-top: 30px; */
+    /* padding-bottom: 70px; */
+    background-image: url('../images/doctorsbg.png'); /* replace with actual image path if needed */
+    background-repeat: repeat;
+    background-size: cover;
+    /* margin-top: -70px; */
+    overflow-y: hidden;
+    box-sizing: border-box;
+    margin-top: -70px;
+  }
+  
+  /* Section heading */
+  .section-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 100px;
+    font-family: 'Arvo', serif;
+  }
+  
+  .section-heading .highlight {
+    font-family: 'Caladea', serif;
+    font-size: 32px;
+  }
+  
+  /* Card container */
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    margin-bottom: 60px;
+  }
+  
+  /* Service card */
+  .service-card {
+    background: linear-gradient(to bottom right, #D9F6FF, #D0D2FF);
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    /* height: auto; */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icon-container {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
+  }
+  
+  .icon-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .service-heading {
+    font-size: 20px;
+    font-family: 'Caladea', serif;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 14px;
+    font-family: 'Arvo', serif;
+    text-align: justify;
+    color: #333;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .services-container {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-heading {
+      font-size: 24px;
+    }
+  
+    .section-heading .highlight {
+      font-size: 28px;
+    }
+  
+    .service-heading {
+      font-size: 18px;
+    }
+  
+    .service-description {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-heading {
+      font-size: 20px;
+    }
+  
+    .section-heading .highlight {
+      font-size: 24px;
+    }
+  
+    .service-card {
+      padding: 20px;
+    }
+  
+    .service-heading {
+      font-size: 16px;
+    }
+  
+    .service-description {
+      font-size: 12px;
+    }
+  }
+  

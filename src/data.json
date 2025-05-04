@@ -1,0 +1,171 @@
+ {
+    "harsh" : [
+        {
+            "id": "1",
+            "image": "assets/food.png",
+            "heading": "Food & Nutrition",
+            "description": "Maintaining strong and healthy feet vital for overall well being and mobility.proper nutrition strengthen bones and muscles. "
+        },
+        {
+            "id": "2",
+            "image": "assets/pill.png",
+            "heading": "medicine",
+            "description": "We provide a wide range of medical solutions to diagnose, manage and treat various health condition effectively "
+        },
+        {
+            "id": "3",
+            "image": "assets/dentist.png",
+            "heading": "Dental Care",
+            "description": "Good oral health is essential for overall well-being . our clinic provides a full range of dental care of services to help you to achieve healthy, beautiful smile."
+        },
+        {
+            "id": "4",
+            "image": "assets/syringe.png",
+            "heading": "surgery",
+            "description": "we specialize in the diagnosis, treatment, and management of orthopedic conditions to help you regain mobility and improve you quality of life. "
+        },
+        {
+            "id": "5",
+            "image": "assets/dna.png",
+            "heading": "Neurology",
+            "description": "our neurology department specializes in the dignosis, treatment amd management of conditions affecting the brain, spinal Cord and nervous system"
+        },
+        {
+            "id": "6",
+            "image": "assets/pulse.png",
+            "heading": "Cardiology",
+            "description": "our cardiology department is dedicated to the prevention, dignosis, and treatment of heart-related conditions and ensuring the health. "
+        }
+    ],
+
+    "harsh2" : [
+        {
+            "image": "assets/pulse.png",
+            "name" : "Harsh",
+            "department" :"Neurologist",
+            "description" : "the website should have a clean, professional, and user-friendly design. A visually appealing layout with proper use of colors, fonts, and images enhances trust and usability."
+        },
+        {
+            "image": "assets/pulse.png",
+            "name" : "Harsh",
+            "department" :"Neurologist",
+            "description" : "the website should have a clean, professional, and user-friendly design. A visually appealing layout with proper use of colors, fonts, and images enhances trust and usability."
+        },
+        {
+            "image": "assets/pulse.png",
+            "name" : "Harsh",
+            "department" :"Neurologist",
+            "description" : "the website should have a clean, professional, and user-friendly design. A visually appealing layout with proper use of colors, fonts, and images enhances trust and usability."
+        },
+        {
+            "image": "assets/pulse.png",
+            "name" : "Harsh",
+            "department" :"Neurologist",
+            "description" : "the website should have a clean, professional, and user-friendly design. A visually appealing layout with proper use of colors, fonts, and images enhances trust and usability."
+        },
+        {
+            "image": "assets/pulse.png",
+            "name" : "Harsh",
+            "department" :"Neurologist",
+            "description" : "the website should have a clean, professional, and user-friendly design. A visually appealing layout with proper use of colors, fonts, and images enhances trust and usability."
+        },
+        {
+            "image": "assets/pulse.png",
+            "name" : "Harsh",
+            "department" :"Neurologist",
+            "description" : "the website should have a clean, professional, and user-friendly design. A visually appealing layout with proper use of colors, fonts, and images enhances trust and usability."
+        }
+    ],
+
+    "frequent" : [
+        {
+            "question" : "How to book online appointment?",
+            "answer" : "You can book an online appointment by visiting our official website. Look for the Book Appointment section and follow the step by step process."
+        },
+        {
+            "question" : "Do I need register to book an appointment",
+            "answer" : "Yes, you'll need to create an account with your name, contact information and email address. This ensures a seamless booking process and allows you to manage appointments"
+        },
+        {
+            "question" : "Are online appointments available for all departments?",
+            "answer" : "Most Department offer online availibility for specific department or doctors on our website."
+        },
+        {
+            "question" : "What should I do if I miss my appointment?",
+            "answer" : "If you miss your appointment, we recommend contacting our hospital as soon as possible. Our Team will assist you in rescheduling at a convenient time."
+        },
+        {
+            "question" : "How can I make an appointment in advance?",
+            "answer" : "You can shedule an appointment in adavance throught visit the hospital and speak to our front desk staff to book your appointment."
+        },
+        {
+            "question" : "Can I reschedule or cancel my appointment?",
+            "answer" : "Yes, you can reschedule or cancel your appointment by calling us atleast 24 hours in advance."
+        }
+    ],
+
+    "service" : [
+        {
+            "image" : "assets/clinic.png",
+            "heading" : "Clinical Services",
+            "description" : "Clinical services refer to the direct care provided to patients by healthcare professionals, focusing on managing diseases, injuries and other health conditions"
+        },
+        {
+            "image" : "assets/inpatient.png",
+            "heading" : "Inpatient Care",
+            "description" : "Inpatient care services refer to medical treatment and care provided to patient who are admitted to a hospital."
+        },
+        {
+            "image" : "assets/pharmacy.png",
+            "heading" : "Pharmacy",
+            "description" : "Pharmacy service encompass the preparation and appropriate use of medications to ensure patient safety and improve health outcomes"
+        },
+        {
+            "image" : "assets/paediatrics.png",
+            "heading" : "Paediatrics",
+            "description" : "Paeditrics services focus on the healthcare and medical needs of infants and children typically up to the age of 18."
+        },
+        {
+            "image" : "assets/brain.png",
+            "heading" : "Psychiatry",
+            "description" : "Psychiatrics are medical doctors who specialize in mental health and are trained to asses the psychological aspects of mental illness."
+        },
+        {
+            "image" : "assets/radiology.png",
+            "heading" : "Radiology",
+            "description" : "Radiology services involve the use of medical imaging technologies to diagnose and treat diseases, injuries, and other medical conditions."
+        },
+        {
+            "image" : "assets/food.png",
+            "heading" : "Emergency Medicine",
+            "description" : "Emergency medicine services provide immediate care for patients experience acute medical conditions and injuries."
+        },
+        {
+            "image" : "assets/pulse1.png",
+            "heading" : "Cardiology",
+            "description" : "Cardiology services focus ont diagnosing, treating, and managing conditions related to the heart and circulatory system."
+        },
+        {
+            "image" : "assets/check-up.png",
+            "heading" : "Heaalth Check",
+            "description" : "The health check service provided by a hospital typically includes a comprehensive assessment of an individual's health status."
+        },
+        {
+            "image" : "assets/eyes.png",
+            "heading" : "Eye Care",
+            "description" : "eye care services in hospitals typically include a wide range  of diagnostic and surgical treatments for various eye conditions."
+        },
+        {
+            "image" : "assets/neurology.png",
+            "heading" : "Neurology",
+            "description" : "Neurology servoces focus on the diagnosis, treatment and management of disorders affecting the nervous system."
+        },
+        {
+            "image" : "assets/tooth.png",
+            "heading" : "Dental Care",
+            "description" : "Dental care services involve the prevention, diagnosis, and treatment of oral health issues. These services aim to maintain healthy teeth"
+        }
+       
+    ]
+ }
+

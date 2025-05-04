@@ -1,0 +1,126 @@
+/* Label.css */
+
+.label-container {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  .label-content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .label-header {
+    text-align: center;
+  }
+  
+  .pulse-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .label-title {
+    font-size: 30px;
+    font-family: "Arvo", serif;
+  }
+  
+  .label-title span {
+    color: #003366; /* darkBlue */
+  }
+  
+  .label-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .label-card {
+    width: 300px;
+    height: 350px;
+    border: 3px solid #cce0f5; /* borderbg */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Arvo", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .label-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Light black shadow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .label-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .label-card h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .label-card p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 992px) {
+    .label-title {
+      font-size: 26px;
+    }
+  
+    .label-card {
+      width: 280px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .label-title {
+      font-size: 24px;
+    }
+  
+    .label-card {
+      width: 90%;
+    }
+  
+    .pulse-img {
+      width: 120px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .label-title {
+      font-size: 22px;
+    }
+  
+    .label-card p {
+      font-size: 14px;
+    }
+  
+    .label-card h6 {
+      font-size: 18px;
+    }
+  }
+  

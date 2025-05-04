@@ -1,0 +1,165 @@
+/* Font classes (optional, include only if you use these font-families) */
+.Arvo {
+    font-family: 'Arvo', serif;
+  }
+  
+  .caladea {
+    font-family: 'Caladea', serif;
+  }
+  
+  /* Section container */
+  .TestimonialMainSection {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Inner Swiper container */
+  .TestimoialSubSection {
+    background-color: #CBD6FF; /* light blue */
+    position: relative;
+    width: 90%;
+    max-width: 745px;
+    height: 100%;
+    min-height: 275px;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Testimonial text */
+  .Testimonial-description {
+    margin-top: 60px;
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    padding: 0 10px;
+    font-family: 'Arvo';
+  }
+  
+  /* Profile section */
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .profile-pic img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    background: #000;
+  }
+  
+  .profile-info {
+    margin-left: 15px;
+  }
+  
+  .profile-info .name {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Arvo';
+  }
+  
+  .profile-info .specialty {
+    font-size: 14px;
+    color: #333;
+    font-family: 'caladea';
+  }
+  
+  /* Stars */
+  .star-rating {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .star-rating img {
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Semicolon quote image */
+  .quote-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .quote-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Heading */
+  .Testimonial-Heading {
+    padding-top: 20px;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .TestimoialSubSection {
+      padding: 15px;
+    }
+  
+    .Testimonial-description {
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  
+    .profile-info .name {
+      font-size: 16px;
+    }
+  
+    .star-rating {
+      top: 5px;
+      left: 15px;
+    }
+  
+    .quote-icon {
+      width: 30px;
+      height: 30px;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Testimonial-description {
+      font-size: 13px;
+      padding: 0 5px;
+    }
+  
+    .profile-info .specialty {
+      font-size: 12px;
+    }
+  
+    .star-rating img {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .TestimoialSubSection {
+      min-height: 260px;
+    }
+  }
+  

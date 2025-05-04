@@ -1,0 +1,135 @@
+.work-container {
+    overflow-x: hidden;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  
+  .work-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .work-title {
+    font-size: 28px;
+    font-family: 'Arvo', serif;
+    color: black;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    font-family: 'Caladea', serif;
+  }
+  
+  .work-steps-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .work-step {
+    flex: 1 1 250px;
+    max-width: 260px;
+    text-align: center;
+  }
+  
+  .work-icon {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/workbg.png'); /* Use your actual background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .work-icon img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  .step-title {
+    font-size: 18px;
+    font-family: 'Caladea', serif;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .step-desc {
+    font-size: 15px;
+    font-family: 'Arvo', serif;
+    text-align: justify;
+    height: auto;
+    margin-top: 5px;
+  }
+  
+  /* Arrows positioning */
+  .arrow {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+  }
+  
+  .arrow-1 {
+    top: 50px;
+    left: 22%;
+  }
+  
+  .arrow-2 {
+    top: 70px;
+    left: 47%;
+  }
+  
+  .arrow-3 {
+    top: 60px;
+    left: 72%;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 1024px) {
+    .arrow {
+      display: none;
+    }
+  
+    .work-title {
+      font-size: 24px;
+    }
+  
+    .work-step {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .work-step {
+      flex: 1 1 100%;
+    }
+  
+    .work-title {
+      font-size: 22px;
+    }
+  
+    .step-title {
+      font-size: 17px;
+    }
+  
+    .step-desc {
+      font-size: 14px;
+    }
+  
+    .work-icon {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .work-icon img {
+      width: 100px;
+      height: 100px;
+    }
+  }  
