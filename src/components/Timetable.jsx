@@ -9,7 +9,7 @@ const Timetable = () => {
     <div className="timetable-container">
       <div className="timetable-content">
         <div className="timetable-header">
-          <h1 className="heading caladea">Book Appointment</h1>
+          <h1 className="heading caladea font-bold">Book Appointment</h1>
           <span className="subheading Arvo">According To Time Table</span>
         </div>
 
@@ -21,7 +21,7 @@ const Timetable = () => {
             </div>
 
             {[
-              { day: "Monday - Tuesday", time: "9am - 6 pm" },
+              { day: "Monday - Tuesday", time: "9am - 6pm" },
               { day: "Wednesday - Thursday", time: "8am - 5pm" },
               { day: "Friday", time: "7am - 10pm" },
               { day: "Saturday", time: "10am - 7pm" },

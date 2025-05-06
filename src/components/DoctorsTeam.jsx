@@ -3,8 +3,6 @@ import Doctor1 from "../images/doctor1.png";
 import Doctor2 from "../images/doctor2 copy.png";
 import Doctor3 from "../images/doctor3.png";
 import Doctor4 from "../images/doctor4.png";
-import Doctor5 from "../images/doctor5.png";
-import Doctor6 from "../images/doctor6.png";
 import "../css/DoctorsTeam.css";
 
 const doctorData = [
@@ -12,15 +10,15 @@ const doctorData = [
   { image: Doctor2, name: "Daniel Smith", title: "Cardiologist" },
   { image: Doctor3, name: "Sophia Lee", title: "Dermatologist" },
   { image: Doctor4, name: "James Brown", title: "Neurologist" },
-  { image: Doctor5, name: "Olivia Taylor", title: "Gynecologist" },
-  { image: Doctor6, name: "William Davis", title: "Orthopedic" },
+  { image: Doctor1, name: "Olivia Taylor", title: "Gynecologist" },
+  { image: Doctor2, name: "William Davis", title: "Orthopedic" },
 ];
 
 const DoctorsTeam = () => {
   return (
     <div className="doctors-section">
       <h2 className="doctors-title">
-        Meet our <span className="highlight">Specialist</span>
+        Meet our <span className="text-[34px] caladea font-bold">Specialist</span>
       </h2>
       <div className="doctors-grid">
         {doctorData.map((doctor, index) => (

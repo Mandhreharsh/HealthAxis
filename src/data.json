@@ -1,5 +1,5 @@
  {
-    "harsh" : [
+    "ServicesAreas" : [
         {
             "id": "1",
             "image": "assets/food.png",
@@ -147,7 +147,7 @@
         },
         {
             "image" : "assets/check-up.png",
-            "heading" : "Heaalth Check",
+            "heading" : "Health Check",
             "description" : "The health check service provided by a hospital typically includes a comprehensive assessment of an individual's health status."
         },
         {

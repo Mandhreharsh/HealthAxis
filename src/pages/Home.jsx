@@ -15,9 +15,9 @@ const Home = () => {
     const [services, setServices] = useState([]);
     const [questions, setQuestions] = useState([]);
 
-    useEffect(() =>{
-       setServices(data.harsh)
-       setQuestions(data.frequent)
+    useEffect(() => {
+        setServices(data.ServicesAreas)
+        setQuestions(data.frequent)
     }, [])
     return (
         <div className="bg-white">
@@ -50,9 +50,9 @@ const Home = () => {
             </div>
 
             <div>
-                <Footer/>
+                <Footer />
             </div>
-           
+
         </div>
     )
 }

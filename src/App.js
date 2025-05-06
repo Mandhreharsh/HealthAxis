@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+// App.jsx
+import { useContext, useEffect} from "react";
+import { Context } from "./index"; // Import the context
 import Cookies from "js-cookie";
-import { Route, Routes, Navigate, useLocation } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -9,34 +11,35 @@ import Doctors from "./pages/Doctors";
 import Appointment from './pages/Appointment';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Otp from "./pages/Otp";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const location = useLocation();
+  const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
+  // Optional: sync cookies to context on reload
   useEffect(() => {
     const token = Cookies.get("token");
     if (token) {
-      setIsLoggedIn(true);
+      setIsAuthenticated(true);
     }
-  }, []);
+  }, [setIsAuthenticated]);
 
   return (
     <>
-      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+      {isAuthenticated && <Navbar isLoggedIn={isAuthenticated} setIsLoggedIn={setIsAuthenticated} />}
+
+      <ScrollToTop />
 
       <Routes>
-        {/* Public routes */}
-        {!isLoggedIn && (
+        {!isAuthenticated ? (
           <>
-            <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-            <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/login" element={<Login setIsLoggedIn={setIsAuthenticated} />} />
+            <Route path="/signup" element={<Signup setIsLoggedIn={setIsAuthenticated} />} />
+            <Route path="/otp" element={<Otp />} />
             <Route path="*" element={<Navigate to="/login" replace />} />
           </>
-        )}
-
-        {/* Protected routes */}
-        {isLoggedIn && (
+        ) : (
           <>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />

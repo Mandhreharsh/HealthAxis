@@ -3,7 +3,7 @@ import { Context } from '../index';
 import { Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import "../css/Signupform.css"; // Raw CSS file
+import "../css/Signupform.css"; 
 
 const Signupform = ({ setIsLoggedIn }) => {
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
@@ -12,7 +12,6 @@ const Signupform = ({ setIsLoggedIn }) => {
   const [formData, setformData] = useState({
     name:"",
     email:"",
-    Phone:"",
     password:"",
   })
 
@@ -32,7 +31,6 @@ const Signupform = ({ setIsLoggedIn }) => {
         "http://localhost:7000/api/v1/user/patient/register",
         { name: formData.name,
           email: formData.email,
-          Phone: formData.Phone,
           password: formData.password },
         {
           withCredentials: true,
@@ -40,7 +38,6 @@ const Signupform = ({ setIsLoggedIn }) => {
         }
       );
       toast.success(response.data.message);
-      // setIsAuthenticated(true);
       setIsLoggedIn(false);
       navigate("/login");
     } catch (error) {
@@ -76,18 +73,6 @@ const Signupform = ({ setIsLoggedIn }) => {
             name="email"
             required
             value={formData.email}
-            onChange={changeHandler}
-            className="signupform-input"
-          />
-        </div>
-
-        <div className="signupform-field">
-          <label>Phone <sup>*</sup></label>
-          <input
-            type="text"
-            name="Phone"
-            required
-            value={formData.Phone}
             onChange={changeHandler}
             className="signupform-input"
           />

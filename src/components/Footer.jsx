@@ -1,5 +1,5 @@
 import React from "react";
-import availbility from "../images/availability.png";
+import Pulse from "../images/pulse.png";
 import Line1 from "../images/line1.png";
 import Location from "../images/location.png";
 import Email from "../images/email.png";
@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-column">
             <div className="footer-logo-text">
-              <img src={availbility} alt="logo" className="footer-logo" />
+              <img src={Pulse} alt="logo" className="footer-logo" />
               <span className="footer-heading">Health Axis</span>
             </div>
             <p className="footer-description">
@@ -47,24 +47,24 @@ const Footer = () => {
 
             <div className="footer-hours">
             <div className="flex flex-row justify-between w-[270px]">
-            <span>Wednesday - Friday</span>
-            <span>10am - 4pm</span>
+            <span>Monday - Tuesday</span>
+            <span>9am - 6pm</span>
             </div>
             </div>
               <img src={Line1} alt="line" className="footer-line" />
 
               <div className="footer-hours">
             <div className="flex flex-row justify-between w-[270px]">
-            <span>Wednesday - Friday</span>
-            <span>10am - 4pm</span>
+            <span>Wednesday - Thursday</span>
+            <span>8am - 5pm</span>
             </div>
             </div>
               <img src={Line1} alt="line" className="footer-line" />
 
               <div className="footer-hours">
             <div className="flex flex-row justify-between w-[270px]">
-            <span>Wednesday - Friday</span>
-            <span>10am - 4pm</span>
+            <span>Friday - Saturday</span>
+            <span>10am - 7pm</span>
             </div>
             </div>
               <img src={Line1} alt="line" className="footer-line" />
@@ -83,14 +83,14 @@ const Footer = () => {
               <img width={30} src={Email} alt="email" />
               <div>
                 <p>Email</p>
-                <p>hello@example.com</p>
+                <p>healthaxis@gmail.com</p>
               </div>
             </div>
             <div className="footer-contact">
               <img width={30} src={Location} alt="location" />
               <div>
                 <p>Address</p>
-                <p>124, Western Road, Melbourne Australia</p>
+                <p>Shayona S-one, R.C. Technical road</p>
               </div>
             </div>
           </div>

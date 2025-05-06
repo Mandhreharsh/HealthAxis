@@ -1,0 +1,100 @@
+.otp-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/doctorsbg.png');
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 40px 16px;
+  }
+  
+  .otp-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  .otp-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 12px;
+  }
+  
+  .otp-description {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .otp-email {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .otp-input-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .otp-input:focus {
+    border-color: #5b76f3;
+    box-shadow: 0 0 0 2px rgba(91, 118, 243, 0.2);
+  }
+  
+  .otp-submit-btn {
+    width: 100%;
+    background: linear-gradient(to right, #C4C1FF, #A8F1FF);
+    color: #000;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .otp-resend-text {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .otp-resend-btn {
+    background: none;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .otp-resend-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

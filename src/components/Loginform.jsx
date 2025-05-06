@@ -3,7 +3,7 @@ import { Context } from "../index";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import "../css/Loginform.css"; // Link to raw CSS
+import "../css/Loginform.css"; 
 
 const Loginform = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
@@ -41,9 +41,7 @@ function changeHandler(event) {
       );
       toast.success(response.data.message);
       localStorage.setItem("token", response.data.token); 
-      setIsAuthenticated(true);
-      setIsLoggedIn(true);
-      navigate("/");
+      navigate("/otp", { state: { email: formData.email } });
     } catch (error) {
       toast.error(error.response?.data?.message || "Login failed");
     }

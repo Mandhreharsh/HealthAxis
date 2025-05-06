@@ -5,7 +5,7 @@ const ServicesSection = ({ cares }) => {
   return (
     <div className="ServicesSectionMain">
       <div className="section-heading">
-        Other Health Care <span className="highlight">Services</span>
+        Other Health Care <span className="text-[34px] caladea font-bold">Services</span>
       </div>
 
       <div className="services-container">

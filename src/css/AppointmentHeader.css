@@ -19,7 +19,6 @@
     align-items: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     position: relative;
-    /* margin: 0 auto; */
     padding: 30px;
     border-radius: 12px;
     overflow: hidden;
@@ -48,7 +47,6 @@
   }
   
   .appointment-image {
-    /* top: -85px; */
     margin-top: 80px;
     right: 0;
     width: 400px;
@@ -59,8 +57,7 @@
     width: 100%;
     height: auto;
   }
-  
-  /* Responsive Styles */
+
   @media (max-width: 1024px) {
     .appointment-content {
       flex-direction: column;

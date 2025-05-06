@@ -15,26 +15,26 @@ import "../css/Testimonial.css";
 const testimonials = [
   {
     description: "As a dedicated member of this hospital, I take immense pride in being part of a team that prioritizes patient care above all else. Here, every individual is treated with compassion, respect and dignity.",
-    name: "Harsh",
-    specialty: "Neurologist",
+    name: "Emily Carter",
+    specialty: "Pediatrician",
     image: Doctor1
   },
   {
     description: "Working at this hospital has been an incredibly fulfilling journey. Here, we combine advanced medical technology with a patient first approach to deliver exceptional healthcare.",
-    name: "Harsh",
-    specialty: "Neurologist",
+    name: "Daniel Smith",
+    specialty: "Cardiologist",
     image: Doctor2
   },
   {
     description: "Health went above and beyond to ensure my recovery was smooth and comfortable. The staff were always available to answer questions and address any concerns I had.",
-    name: "Harsh",
+    name: "James Brown",
     specialty: "Neurologist",
     image: Doctor1
   },
   {
     description: "I can confidently say that HealthAxis is the best place to receive quality healthcare in our community. Their dedication to patient well-being is truly remarkable.",
-    name: "Harsh",
-    specialty: "Neurologist",
+    name: "William Davis",
+    specialty: "Orthopedic",
     image: Doctor4
   }
 ];

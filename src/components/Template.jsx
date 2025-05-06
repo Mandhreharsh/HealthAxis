@@ -6,9 +6,7 @@ import Loginanimation from "../images/loginanimation.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Signupform from "./Signupform";
 import Loginform from "./Loginform";
-import axios from "axios";
-import toast from "react-hot-toast";
-import "../css/Template.css"; // link to the CSS file
+import "../css/Template.css"; 
 
 const Template = ({ formtype, setIsLoggedIn }) => {
   return (

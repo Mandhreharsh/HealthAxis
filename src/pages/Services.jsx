@@ -6,7 +6,7 @@ import Testimonial from "../components/Testimonial";
 
 const Services = () => {
 
-    const[cares, setCares] = useState([]);
+    const [cares, setCares] = useState([]);
 
     useEffect(() => {
         setCares(data.service)

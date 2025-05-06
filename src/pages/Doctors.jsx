@@ -7,18 +7,18 @@ const Appointment = () => {
     return (
         <div>
             <div>
-            <DoctorsTeam></DoctorsTeam>
-        </div>
+                <DoctorsTeam></DoctorsTeam>
+            </div>
 
-        <div>
+            <div>
                 <Testimonial></Testimonial>
             </div>
 
-        <div>
-            <Footer></Footer>
+            <div>
+                <Footer></Footer>
+            </div>
         </div>
-        </div>
-        
+
     )
 }
 

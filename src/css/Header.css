@@ -1,4 +1,4 @@
-/* Header.css */
+
 
 .header-container {
     position: relative;
@@ -37,7 +37,7 @@
   }
   
   .header-text h1 span {
-    color: #8F9DFF; /* darkBlue */
+    color: #8F9DFF; 
   }
   .header-text p {
     margin-top: 30px;
@@ -94,7 +94,6 @@
     margin-top: 20px;
   }
   
-  /* Responsive Design */
   
   @media screen and (max-width: 992px) {
     .header-text h1 {

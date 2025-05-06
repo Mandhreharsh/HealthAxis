@@ -57,6 +57,7 @@
   .footer-icons {
     display: flex;
     flex-direction: row;
+    
   }
   
   .footer-icons img {
@@ -113,7 +114,7 @@
     justify-content: center;
   }
   
-  /* Responsive Adjustments */
+
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;
@@ -127,7 +128,7 @@
   
     .footer-hours {
       flex-direction: column;
-      /* gap: 4px; */
+  
     }
   
     .footer-contact {

@@ -97,7 +97,6 @@
     opacity: 0.5;
   }
   
-  /* Tablet */
   @media screen and (max-width: 1240px) {
     .timetable-boxes {
       flex-direction: column;
@@ -130,8 +129,7 @@
       left: 40%;
     }
   }
-  
-  /* Mobile */
+
   @media screen and (max-width: 600px) {
     .heading {
       font-size: 22px;

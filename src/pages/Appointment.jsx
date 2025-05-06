@@ -17,12 +17,9 @@ const Appointment = () => {
   const [gender, setGender] = useState("");
   const [appointmentDate, setAppointmentDate] = useState("");
   const [department, setDepartment] = useState("Pediatrics");
-  const [doctorFirstName, setDoctorFirstName] = useState("");
-  const [doctorLastName, setDoctorLastName] = useState("");
   const [address, setAddress] = useState("");
   const [doctor, setDoctor] = useState("");
 
-  const [doctors, setDoctors] = useState([]);
 
   const departmentsArray = [
     "Pediatrics", "Orthopedics", "Cardiology", "Neurology",
@@ -33,20 +30,6 @@ const Appointment = () => {
     "Emily Carter", "Daniel Smith", "Sophia Lee", "James Brown",
     "Olivia Taylor", "William Davis"
   ];
-
-  // useEffect(() => {
-  //   const fetchDoctors = async () => {
-  //     try {
-  //       const { data } = await axios.get("http://localhost:4000/api/v1/user/doctors", {
-  //         withCredentials: true
-  //       });
-  //       setDoctors(data.doctors);
-  //     } catch (error) {
-  //       toast.error("Failed to fetch doctors");
-  //     }
-  //   };
-  //   fetchDoctors();
-  // }, []);
 
   const handleAppointment = async (e) => {
     e.preventDefault();
@@ -71,7 +54,6 @@ const Appointment = () => {
         }
       );
       toast.success(data.message);
-      // Reset fields
       setFirstName("");
       setLastName("");
       setEmail("");
@@ -79,9 +61,7 @@ const Appointment = () => {
       setDob("");
       setGender("");
       setAppointmentDate("");
-      setDepartment("Pediatrics");
-      setDoctorFirstName("");
-      setDoctorLastName("");
+      setDepartment("");
       setAddress("");
     } catch (error) {
       toast.error(error?.response?.data?.message || "Something went wrong");
@@ -100,7 +80,6 @@ const Appointment = () => {
 
           <div className="form-card">
             <form className="appointment-form" onSubmit={handleAppointment}>
-              {/* First Name */}
               <div className="input-group">
                 <label>First Name <sup>*</sup></label>
                 <input
@@ -110,8 +89,6 @@ const Appointment = () => {
                   onChange={(e) => setFirstName(e.target.value)}
                 />
               </div>
-
-              {/* Last Name */}
               <div className="input-group">
                 <label>Last Name <sup>*</sup></label>
                 <input
@@ -121,8 +98,6 @@ const Appointment = () => {
                   onChange={(e) => setLastName(e.target.value)}
                 />
               </div>
-
-              {/* Email */}
               <div className="input-group">
                 <label>Email <sup>*</sup></label>
                 <input
@@ -133,7 +108,6 @@ const Appointment = () => {
                 />
               </div>
 
-              {/* Phone */}
               <div className="input-group">
                 <label>Phone Number <sup>*</sup></label>
                 <input
@@ -144,7 +118,6 @@ const Appointment = () => {
                 />
               </div>
 
-              {/* DOB */}
               <div className="input-group">
                 <label>Date of Birth <sup>*</sup></label>
                 <input
@@ -155,7 +128,6 @@ const Appointment = () => {
                 />
               </div>
 
-              {/* Gender */}
               <div className="input-group">
                 <label>Gender <sup>*</sup></label>
                 <select
@@ -169,7 +141,6 @@ const Appointment = () => {
                 </select>
               </div>
 
-              {/* Appointment Date */}
               <div className="input-group">
                 <label>Appointment Date <sup>*</sup></label>
                 <input
@@ -180,7 +151,7 @@ const Appointment = () => {
                 />
               </div>
 
-              {/* Department */}
+
               <div className="input-group">
                 <label>Department <sup>*</sup></label>
                 <select
@@ -198,7 +169,6 @@ const Appointment = () => {
                 </select>
               </div>
 
-              {/* Select Doctor */}
               <div className="input-group">
                 <label>Select Doctor <sup>*</sup></label>
                 <select
@@ -216,7 +186,6 @@ const Appointment = () => {
                 </select>
               </div>
 
-              {/* Address */}
               <div className="input-group address-group">
                 <label>Address <sup>*</sup></label>
                 <textarea
@@ -226,7 +195,6 @@ const Appointment = () => {
                 ></textarea>
               </div>
 
-              {/* Submit */}
               <div className="submit-group">
                 <button type="submit">Submit</button>
               </div>

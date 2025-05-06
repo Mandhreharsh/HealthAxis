@@ -51,7 +51,6 @@ const Message = () => {
 
       <div className="message-wrapper">
         <div className="message-box">
-          {/* Contact Information */}
           <div className="contact-info">
             <div className="contact-title">Contact Information</div>
             <p className="contact-text">
@@ -60,7 +59,7 @@ const Message = () => {
             <ul className="contact-list">
               <li className="contact-item">
                 <img src={Location} alt="Location" />
-                Shayona S-one, R.C. Technical road, Ghatlodiya, 380888.
+                Shayona S-one, R.C. Technical road, 388888.
               </li>
               <li className="contact-item">
                 <img src={Email} alt="Email" />
@@ -68,20 +67,18 @@ const Message = () => {
               </li>
               <li className="contact-item">
                 <img src={Phone1} alt="Phone" />
-                +91-9922446677
+                +123-456-789
               </li>
             </ul>
           </div>
 
-          {/* Social Links */}
           <div className="social-icons">
             <a href=""><img src={Linkedin} alt="LinkedIn" /></a>
             <a href=""><img src={Instagram} alt="Instagram" /></a>
             <a href=""><img src={Facebook} alt="Facebook" /></a>
           </div>
         </div>
-
-        {/* Form Section */}
+        
         <div className="form-section">
           <div className="form-wrapper">
             <div className="form-title">Contact Us</div>

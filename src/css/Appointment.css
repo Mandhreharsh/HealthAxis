@@ -69,20 +69,22 @@
 }
 
 .submit-group button {
-  background-color: #9BB3FB;
   color: black;
   padding: 12px 30px;
   font-size: 16px;
-  border: none;
-  border-radius: 8px;
+  border-radius: 3px;
   cursor: pointer;
+  background-color: #8F9DFF;
+  color: white;
+  border: none;
+  box-shadow: 0 3px 17px #98a4ff;
 }
 
 .submit-group button:hover {
   background-color: #9BB3FB;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
   .input-group {
     width: 48%;

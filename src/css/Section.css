@@ -1,7 +1,6 @@
 .section-container {
     overflow-x: hidden;
     margin-top: 30px;
-    /* padding-top: 30px; */
     background-image: url('../images/doctorsbg.png');
     background-repeat: repeat;
     background-size: cover;
@@ -83,7 +82,6 @@
     text-align: justify;
   }
   
-  /* Responsive adjustments */
   @media screen and (max-width: 1024px) {
     .service-card {
       width: 300px;

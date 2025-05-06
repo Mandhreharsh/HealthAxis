@@ -9,7 +9,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate();
 
-    // Control body scroll when menu is open
     useEffect(() => {
         if (menuOpen) {
             document.body.style.overflow = 'hidden';
@@ -17,7 +16,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
             document.body.style.overflow = 'auto';
         }
         
-        // Cleanup function
         return () => {
             document.body.style.overflow = 'auto';
         };
@@ -27,14 +25,14 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
 
     const handleLogout = async () => {
         try {
-            Cookies.remove("token");                // Remove cookie
-            setIsLoggedIn(false);                   // Update login state
-            setMenuOpen(false);                     // Close menu
+            Cookies.remove("token");               
+            setIsLoggedIn(false);                   
+            setMenuOpen(false);                    
             toast.success("Logged Out");
     
-            // Delay navigation to allow state to update
+            
             setTimeout(() => {
-                window.location.href = "/login";    // Use full redirect instead of navigate()
+                window.location.href = "/login";    
             }, 100);
         } catch (err) {
             toast.error("Logout failed");
@@ -45,14 +43,12 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
     return (
         <header className="navbar-container">
             <nav className="navbar">
-                {/* Logo */}
                 <div className="navbar-logo">
                     <Link to="/">
                         <img src={Pulse} alt="Logo" width="80" height="60" />
                     </Link>
                 </div>
 
-                {/* Nav Links */}
                 <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
                     <li className="home"><NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink></li>
                     <li className="services"><NavLink to="/services" onClick={() => setMenuOpen(false)}>Services</NavLink></li>
@@ -65,7 +61,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
                     )}
                 </ul>
 
-                {/* Hamburger & Cross Icon */}
                 <div className="menu-toggle" onClick={toggleMenu}>
                     {menuOpen ? (
                         <span className="cross-icon">&times;</span>

@@ -39,7 +39,7 @@
   .work-icon {
     width: 150px;
     height: 150px;
-    background-image: url('../images/workbg.png'); /* Use your actual background */
+    background-image: url('../images/workbg.png'); 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -68,8 +68,7 @@
     height: auto;
     margin-top: 5px;
   }
-  
-  /* Arrows positioning */
+
   .arrow {
     position: absolute;
     width: 80px;
@@ -91,7 +90,7 @@
     left: 72%;
   }
   
-  /* Responsive Adjustments */
+
   @media screen and (max-width: 1024px) {
     .arrow {
       display: none;

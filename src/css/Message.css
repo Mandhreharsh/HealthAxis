@@ -10,7 +10,6 @@
   .message-heading {
     text-align: center;
     font-size: 28px;
-    /* font-weight: 600; */
   }
 
   .text{
@@ -140,7 +139,6 @@
     height: 100px;
     margin-top: 5px;
     padding: 5px;
-    /* width: 265px; */
   }
   
   .form-submit {
@@ -151,17 +149,17 @@
   }
   
   .form-submit button {
-    background-color: #AFBBFF;
-    color: white;
-    border: none;
     height: 45px;
     padding: 0 30px;
     font-size: 16px;
     cursor: pointer;
     width: 265px;
+    background-color: #8F9DFF;
+    color: white;
+    border: none;
+    box-shadow: 0 3px 17px #98a4ff;
   }
   
-  /* Responsive */
   @media (max-width: 1024px) {
     .message-wrapper {
       flex-direction: column;

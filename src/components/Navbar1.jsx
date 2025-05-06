@@ -15,12 +15,11 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
   return (
     <div className="top-0 sticky w-full h-[50px] z-[100] shadow-md  bg-transparent  text-white">
       <nav className="container mx-auto px-4 flex items-center justify-between h-full">
-        {/* Logo */}
+
         <Link to="/">
           <img height="60" width="60" src={Pulse} alt="Logo" className="h-14" />
         </Link>
 
-        {/* Desktop Menu */}
         <ul className="hidden lg:flex gap-10 oswald1">
           {["Home", "Services", "Doctors", "Appointment"].map(
             (item, index) => (
@@ -37,7 +36,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
           )}
         </ul>
 
-        {/* Login/Signup/Logout */}
         <div className="hidden lg:flex gap-4">
           {!isLoggedIn ? (
             <>
@@ -46,11 +44,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
                   Login
                 </button>
               </NavLink>
-              {/* <NavLink to="/signup">
-                <button className="px-3 py-2   rounded-sm border border-white">
-                  Sign Up
-                </button>
-              </NavLink> */}
+         
             </>
           ) : (
             <button
@@ -65,13 +59,12 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
+        
         <button onClick={toggleNavbar} className="lg:hidden">
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
 
-      {/* Mobile Menu */}
       <div
         className={`lg:hidden fixed inset-0 bg-transparent bg-gradient-to-tl from-[#12100e] to-[#3d3d3d] text-white p-6 flex flex-col items-center gap-6 transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -94,7 +87,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
           )
         )}
 
-        {/* Mobile Login/Signup/Logout */}
+      
         {!isLoggedIn ? (
           <>
             <NavLink to="/login">
@@ -106,12 +99,6 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
               </button>
             </NavLink>
             <NavLink to="/signup">
-              {/* <button
-                className="w-full px-5 py-2 bg-yellow-400 text-gray-900 rounded-md hover:bg-yellow-500 transition"
-                onClick={toggleNavbar}
-              >
-                Sign Up
-              </button> */}
             </NavLink>
           </>
         ) : (
