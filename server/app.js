@@ -16,7 +16,7 @@ const app = express();
 config({path: ".env"});
 
 const allowedOrigins = [
-    "https://health-axis.vercel.app/"
+    "https://health-axis.vercel.app"
   ];
 
 
