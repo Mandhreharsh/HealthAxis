@@ -52,8 +52,6 @@ app.get("/", (req, res) => {
     res.send("Server is running...");
   });
 
-  dbConnection();
-
 app.use(errorMiddleware);
 
 export default app;
