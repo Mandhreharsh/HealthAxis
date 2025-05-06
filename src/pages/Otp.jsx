@@ -68,7 +68,7 @@ const Otp = () => {
     const fullOtp = otp.join('');
 
     try {
-      const res = await axios.post('http://localhost:7000/api/v1/user/verify-otp', {
+      const res = await axios.post('https://healthaxis.onrender.com/api/v1/user/verify-otp', {
         email,
         otp: fullOtp,
       });
@@ -83,7 +83,7 @@ const Otp = () => {
 
   const handleResendOtp = async () => {
     try {
-      await axios.post('http://localhost:7000/api/v1/user/resend-otp', { email });
+      await axios.post('https://healthaxis.onrender.com/api/v1/user/resend-otp', { email });
       toast.success('OTP resent successfully');
       setResendTimer(30);
     } catch (err) {

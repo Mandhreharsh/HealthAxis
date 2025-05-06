@@ -28,7 +28,7 @@ const Signupform = ({ setIsLoggedIn }) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:7000/api/v1/user/patient/register",
+        "https://healthaxis.onrender.com/api/v1/user/patient/register",
         { name: formData.name,
           email: formData.email,
           password: formData.password },
