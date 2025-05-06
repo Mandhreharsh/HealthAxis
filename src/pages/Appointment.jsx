@@ -35,7 +35,7 @@ const Appointment = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:7000/api/v1/appointment/post",
+        "https://healthaxis.onrender.com/api/v1/appointment/post",
         {
           firstName,
           lastName,
